@@ -11,7 +11,7 @@ def say_hello():
 
     return jsonify({
         "client_ip": response.get('ip_address'),
-        "location": response.get('country__name'),
+        "location": response.get('country'),
         "greeting": "hello {}!".format(visitor)})
 
 
